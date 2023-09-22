@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: hsl(185, 41%, 84%);
+}
+/* top logo */
+.logo {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+/* main container starts here */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  width: 100vw;
+  height: 850px;
+  margin: 0px 20px;
+  background-color: hsl(0, 0%, 100%);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+/* div for each input container */
+.inputContainer {
+  position: relative;
+  width: 400px;
+  padding: 0px 15px;
+}
+/* icons inside input  */
+.icons {
+  position: absolute;
+  padding: 15px 0px 0px 15px;
+}
+/* bill container starts here */
+.billLabel {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  color: hsl(184, 14%, 56%);
+  margin-top: 35px;
+  padding: 0px 25px;
+}
+.bill input {
+  width: 380px;
+  height: 50px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  padding-right: 15px;
+}
+
+/* active state for container */
+.bill input:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+/* percentage buttons start here */
+.percentage {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+  padding: 10px 0px 30px 20px;
+}
+.selectTip {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 15px;
+}
+/* div containing all buttons */
+.btns {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 180px);
+}
+.btns button {
+  font-family: "Space Mono", monospace;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 15px hsl(185, 41%, 84%);
+}
+/* dark coloured buttons */
+.dark_colour {
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(189, 41%, 97%);
+}
+.dark_colour:hover {
+  cursor: pointer;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
+/* deep cyan button */
+.deep_colour {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+.deep_colour:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+}
+/* custom box */
+.customBox {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px hsl(185, 41%, 84%);
+  color: hsl(184, 14%, 56%);
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  padding-right: 35px;
+}
+.customBox:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+
+/* input number of people */
+.peopleLabel {
+  font-family: "Space Mono", monospace;
+  font-size: 15px;
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 10px;
+  padding: 0px 25px;
+}
+/* error info for both input boxes */
+#errorInfo {
+  text-align: right;
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+  color: chocolate;
+  margin-bottom: 10px;
+  padding-right: 22px;
+}
+.people input {
+  width: 380px;
+  height: 50px;
+  background-color: hsl(189, 41%, 97%);
+  border: none;
+  border-radius: 5px;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  text-align: right;
+  padding-right: 15px;
+}
+/* active state for input box */
+.people input:hover {
+  cursor: pointer;
+  border: 2px solid hsl(172, 67%, 45%);
+}
+/* calculated tip amount starts here */
+.amount {
+  width: 380px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: hsl(183, 100%, 15%);
+  padding: 20px 0px 0px 0px;
+  margin-bottom: 20px;
+}
+/* box containing result */
+.resetContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  gap: 20px;
+}
+/* tip per person(label) */
+.amtPerPerson {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* total tip (label)*/
+.totalPerPerson {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount h4 {
+  font-family: "Space Mono", monospace;
+  color: hsl(189, 41%, 97%);
+}
+.person {
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
+  font-size: 15px;
+  color: hsl(184, 14%, 56%);
+}
+
+.tip {
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  color: hsl(172, 67%, 45%);
+}
+/* reset button starts here */
+.resetButton {
+  margin-top: 20px;
+  padding: 10px 0px;
+  font-family: "Space Mono", monospace;
+  font-size: 24px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: none;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+.resetButton:hover {
+  cursor: pointer;
+  background-color: hsl(185, 41%, 84%);
+}
+@media (min-width: 768px) and (max-width: 1919px) {
+  .container {
+    width: 900px;
+    height: 500px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0 10px hsl(172, 67%, 45%);
+  }
+  .people {
+    margin-bottom: 40px;
+  }
+  .amount {
+    padding-top: 30px;
+    margin: 15px 0 0 0;
+    height: 380px;
+  }
+  .resetContainer {
+    gap: 45px;
+  }
+  .resetButton {
+    margin-top: 80px;
+  }
+}
